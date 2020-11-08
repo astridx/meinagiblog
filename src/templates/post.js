@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import Suggested from '../components/Suggested'
 import SEO from '../components/SEO'
 import Comment from '../components/Comment'
-import Blurb from '../components/Blurb'
 
 import config from '../utils/config'
 import { slugify } from '../utils/helpers'
@@ -84,31 +83,6 @@ export default function PostTemplate({ data, pageContext }) {
           />
         </article>
       </div>
-      <Blurb title="About the author">
-        <p>
-          Hey, I'm <Link to="/me">Tania</Link>, a software engineer, writer, and
-          open-source creator. I publish guides and tutorials about modern
-          JavaScript, design, and programming.
-        </p>
-        <p>
-          <a
-            className="button"
-            href="https://xxxxxx.substack.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Join newsletter
-          </a>
-          <a
-            className="button"
-            href="https://ko-fi.com/xxxxxx"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Buy me a coffee
-          </a>
-        </p>
-      </Blurb>
       <div className="container">
         <div id="comments">
           <h2>Comments</h2>
